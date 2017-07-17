@@ -68,16 +68,8 @@ var config = {
   },
   secret: 'someCoolSecretRightHere',
 
-  credentials    : [
-    {
-      username : 'admin',
-      password : 'password'
-    },
-    {
-      username : 'admin2',
-      password : 'password'
-    }
-  ],
+  //Loads accounts
+  credentials : require('./credentials.js'),
 
   locale: 'en',
 
