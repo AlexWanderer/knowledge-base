@@ -7,7 +7,11 @@
     </div>
   </form>
 </div>
-
+<div class="list-group span12 pagination-centered">
+{{#featured}}
+  <a href="{{config.base_url}}/{{slug}}" class="list-group-item">⭐ {{title}}</a>
+{{/featured}}
+</div>
 <div class="home-categories row">
   {{#pages}}
     {{#is_index}}

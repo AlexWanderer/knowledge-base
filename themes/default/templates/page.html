@@ -41,7 +41,7 @@
         </div>
       {{/canEdit}}
 
-      {{#meta.title}}<h1 class="title">{{meta.title}}</h1>{{/meta.title}}
+      {{#meta.title}}<h1 class="title">{{#isFeatured}}⭐ {{/isFeatured}}{{meta.title}}</h1>{{/meta.title}}
 
       {{{content}}}
 

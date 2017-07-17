@@ -163,6 +163,7 @@ class Raneto {
         slug    : slug,
         title   : meta.title ? meta.title : this.slugToTitle(slug),
         body    : html,
+        feature : meta.feature,
         excerpt : _s.prune(_s.stripTags(_s.unescapeHTML(html)), (this.config.excerpt_length || 400))
       };
     } catch (e) {
@@ -261,6 +262,7 @@ class Raneto {
           val.files.push({
             slug   : slug,
             title  : meta.title ? meta.title : this.slugToTitle(slug),
+            feature : meta.feature,
             is_directory: false,
             active : (activePageSlug.trim() === '/'+ slug),
             sort   : pageSort

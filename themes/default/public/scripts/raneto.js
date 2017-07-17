@@ -127,7 +127,8 @@
           content : $("#entry-markdown").val(),
           meta_title : $("#entry-metainfo-title").val(),
           meta_description : $("#entry-metainfo-description").val(),  
-          meta_sort : $("#entry-metainfo-sort").val(),  
+          meta_sort : $("#entry-metainfo-sort").val(),
+          meta_feature : $("#entry-metainfo-feature").is(':checked')
         }, function (data) {
           switch (data.status) {
             case 0:

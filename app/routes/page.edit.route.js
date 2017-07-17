@@ -34,9 +34,9 @@ function route_page_edit (config, raneto) {
       filepath += '.md';
     }
 
-    // Create content including meta information (i.e. title, description, sort)
+    // Create content including meta information (i.e. title, description, sort, feature)
     function create_content(body) {
-      var meta = create_meta_info(body.meta_title, body.meta_description, body.meta_sort);
+      var meta = create_meta_info(body.meta_title, body.meta_description, body.meta_sort, body.meta_feature);
       return meta + body.content;
     }
     

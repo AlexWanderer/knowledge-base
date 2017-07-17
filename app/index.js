@@ -115,7 +115,6 @@ function initialize (config) {
     app.post('/rn-delete',       middlewareToUse, route_page_delete);
     app.post('/rn-add-page',     middlewareToUse, route_page_create);
     app.post('/rn-add-category', middlewareToUse, route_category_create);
-
   }
 
   // Router for / and /index with or without search parameter

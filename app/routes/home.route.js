@@ -4,6 +4,7 @@
 // Modules
 var fs                             = require('fs');
 var build_nested_pages             = require('../functions/build_nested_pages.js');
+var get_featured_pages             = require('../functions/get_featured_pages.js');
 var get_filepath                   = require('../functions/get_filepath.js');
 var get_last_modified              = require('../functions/get_last_modified.js');
 var remove_image_content_directory = require('../functions/remove_image_content_directory.js');
@@ -39,6 +40,7 @@ function route_home (config, raneto) {
     return res.render('home', {
       config        : config,
       pages         : build_nested_pages(pageList),
+      featured      : get_featured_pages(pageList),
       body_class    : 'page-home',
       meta          : config.home_meta,
       last_modified : get_last_modified(config,config.home_meta,template_filepath),

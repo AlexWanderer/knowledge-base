@@ -92,6 +92,8 @@ function route_wildcard (config, raneto) {
           canEdit = config.allow_editing;
         }
 
+        var isFeatured = (meta.feature == 'true');
+
         return res.render(render, {
           config        : config,
           pages         : page_list,
@@ -102,7 +104,8 @@ function route_wildcard (config, raneto) {
           lang          : config.lang,
           loggedIn      : loggedIn,
           username      : (config.authentication ? req.session.username : null),
-          canEdit       : canEdit
+          canEdit       : canEdit,
+          isFeatured    : isFeatured
         });
 
       }

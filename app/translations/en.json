@@ -36,11 +36,14 @@
     "headerMetaInfo" : "Meta information",
     "lableMetaTitle": "Title",
     "lableMetaDescription": "Description",
-    "lableMetaSort": "Sort"
+    "lableMetaSort": "Sort",
+    "lableMetaFeature": "Feature"
   },
 
   "home": {
-    "searchKnowledgeBase": "Search the knowledge base"
+    "searchKnowledgeBase": "Search the knowledge base",
+
+    "featuredArticles"   : "Hot topics"
   },
 
   "login": {
