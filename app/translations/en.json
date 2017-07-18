@@ -60,8 +60,9 @@
     "editPage"   : "Edit",
     "actions"    : "Actions",
 
-    "needHelp"   : "Still need help?",
-    "getInTouch" : "Get in touch!"
+    "featured"   : "FEATURED",
+    "submitTicket": "Submit a ticket",
+    "contactSupport": "Contact Support"
   },
 
   "search": {
