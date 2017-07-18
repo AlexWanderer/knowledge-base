@@ -32,3 +32,5 @@ themes/default/public/lib/
 
 .idea
 kb/credentials.js
+kb/content/
+!kb/content/example.md
