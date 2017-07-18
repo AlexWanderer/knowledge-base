@@ -26,7 +26,7 @@ delint:
 	./node_modules/jshint/bin/jshint \
 		app/                           \
 		bin/raneto                     \
-		example/                       \
+		kb/                       \
 		gulpfile.js;
 
 .PHONY: mocha
@@ -43,7 +43,7 @@ build:
 start:
 
 	# Start HTTP Server
-	node example/server.js
+	node kb/server.js
 
 .PHONY: deploy
 deploy:

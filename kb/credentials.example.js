@@ -1,6 +1,6 @@
 'use strict';
 
-//Accounts go here. The password has to be hashed!
+//Accounts go here. The password has to be hashed (SHA-256)!
 var credentials = [
     {
       username : 'admin',

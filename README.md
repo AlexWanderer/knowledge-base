@@ -1,6 +1,6 @@
 # Elysium Project - Knowledge Base
 
-Elysium's official knowledge base. This is the main source for support & helpful articles.
+Elysium's official knowledge base. This is the main source for support & helpful articles. This repository only includes the app, but no articles!
 
 ## Links
 * [Knowledge Base](https://support.elysium-project.org/)
