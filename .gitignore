@@ -31,9 +31,4 @@ themes/default/public/lib/
 .DS_Store
 
 .idea
-
-# Accounts
 kb/credentials.js
-
-# Articles
-kb/content/
