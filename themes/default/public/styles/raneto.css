@@ -160,6 +160,20 @@
   color: #999;
 }
 
+.text-footer {
+  font-size: 85%;
+  color: #999;
+  margin-top: 5px;
+}
+
+.btn-margin-bottom-10 {
+  margin-top: -5px;
+}
+
+.padding-5 {
+  padding: 5px;
+}
+
 .content .page-meta a {
   color: #999;
   border-bottom: 1px dotted #999;
@@ -184,6 +198,24 @@
   padding: 0 20px;
 }
 
+.featured-btn {
+  white-space: nowrap;
+  overflow:hidden !important;
+  text-overflow: ellipsis !important;
+  text-align: left !important;
+}
+
+.container-table {
+    display: table;
+    margin-top: 10px;
+    margin-bottom: -30px;
+}
+.vertical-center-row {
+    display: table-cell;
+    vertical-align: middle;
+    width: 616px;
+}
+
 @media only screen and (max-width: 767px) {
 
   .home-search .form-group {
@@ -193,5 +225,4 @@
   #home-search {
     margin-bottom: 10px;
   }
-
 }

@@ -6,11 +6,17 @@
       <button type="submit" class="btn btn-primary btn-lg">{{lang.global.search}}</button>
     </div>
   </form>
-</div>
-<div class="list-group span12 pagination-centered">
-{{#featured}}
-  <a href="{{config.base_url}}/{{slug}}" class="list-group-item"><span class="glyphicon glyphicon-envelope"></span>  {{title}}</a>
-{{/featured}}
+  <div class="container container-table">
+    <div class="btn-group-vertical pages row vertical-center-row">
+      {{#featured}}
+        <div class="btn-group">
+        <a href="{{config.base_url}}/{{slug}}" class="btn btn-success featured-btn" role="button">
+          <b><span class="glyphicon glyphicon-star" aria-hidden="true"></span> {{lang.page.featured}}:</b> {{title}}
+        </a>
+        </div>
+      {{/featured}}
+    </div>
+  </div>
 </div>
 <div class="home-categories row">
   {{#pages}}

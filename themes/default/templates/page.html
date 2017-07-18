@@ -39,7 +39,7 @@
       {{/canEdit}}
       {{#isFeatured}}
       <h4>
-        <span class="label label-success">
+        <span class="label label-success padding-5">
           <span class="glyphicon glyphicon-star" aria-hidden="true"></span> {{lang.page.featured}}
         </span>
       </h4>
@@ -50,14 +50,14 @@
       </div>
 
       <div>
-        <div class="last-updated pull-left pull-bottom">
+        <div class="last-updated text-footer pull-left pull-bottom">
           {{lang.global.lastUpdated}} {{last_modified}}
         </div>
         <div class="btn-toolbar pull-right" role="group">
-          <a role="button" href="{{config.base_url}}/{{config.submit_ticket}}" class="btn btn-primary">
+          <a role="button" href="{{config.base_url}}/{{config.submit_ticket}}" class="btn btn-margin-bottom-10 btn-primary">
             <span class="glyphicon glyphicon-envelope"></span> {{lang.page.submitTicket}}
           </a>
-          <a role="button" href="{{config.contact_support}}" class="btn btn-primary">
+          <a role="button" href="{{config.contact_support}}" class="btn btn-margin-bottom-10 btn-primary">
             <span class="glyphicon glyphicon-comment"></span> {{lang.page.contactSupport}}
           </a>
         </div>
