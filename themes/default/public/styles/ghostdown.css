@@ -2,8 +2,64 @@ html {
 	font: 62.5%/1.65 "Open Sans", sans-serif
 }
 body {	
-	font-size: 1.3rem
+	font-size: 1.3rem;
+	background-color: #080808;
+
 }
+
+.menu .category-title {
+  color: #DDD;
+}
+
+.menu .pages {
+  color: #fff;	
+}
+
+.btn {
+	border-radius: 0;
+}
+
+.btn-primary {
+	background-color: transparent;
+	border-color: #333333;
+	border-radius: 0;
+}
+
+.input-lg {
+	background-color: transparent;
+	border-color: #333333;
+	border-radius: 0;
+}
+
+.panel {
+	background-color: transparent;
+	border-color: #333333;
+	border-radius: 0;
+}
+
+.panel-default .panel-heading {
+	background-color: #191919;
+	border-color: #333333;
+	border-radius: 0;
+	color: #d6d6d6;
+}
+
+.panel .list-group, .panel .panel-collapse .list-group {
+	background-color: #101010;
+	border-color: #333333;
+	border-radius: 0;
+}
+
+.list-group-item {
+	background-color: #101010;
+	border-color: #333333;
+	border-radius: 0;
+}	
+
+.jumbotron {
+	background-color: #101010;	
+}
+
 .CodeMirror {
 	font-family: monospace;
 	height: 300px

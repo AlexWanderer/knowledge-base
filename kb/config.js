@@ -4,7 +4,7 @@
 var config = {
 
   // Your site title (format: page_title - site_title)
-  site_title: 'Elysium Project',
+  site_title: 'Elysium Project Support',
 
   // The base URL of your site (can use %base_url% in Markdown files)
   base_url: '',
