@@ -9,14 +9,14 @@ var config = {
   // The base URL of your site (can use %base_url% in Markdown files)
   base_url: '',
 
-  // Conact support link
+  // Contact support link
   contact_support: 'https://forum.elysium-project.org/forum/303-help-support/',
 
   // Submitting ticket guide
-  submit_ticket: 'submit-ticket',
+  submit_ticket: 'submitting-a-ticket', 
 
   // Footer Text / Copyright
-  copyright: 'Copyright &copy; '+ new Date().getFullYear() +' <a href="http://www.elysium-project.org">Elysium Project</a> - <a href="http://raneto.com">Powered by Raneto</a>',
+  copyright: 'Copyright &copy; '+ new Date().getFullYear() +' <a href="http://www.elysium-project.org">Elysium Project</a> - <a href="http://raneto.com">Powered by Raneto</a> & <a href="https://github.com/crypto-browserify/sha.js/">SHA.js</a>',
 
   // Excerpt length (used in search)
   excerpt_length: 400,
