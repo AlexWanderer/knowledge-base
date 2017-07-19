@@ -25,9 +25,9 @@
         <div class="col col-sm-4 col-xs-12">
           <div class="panel panel-default {{class}}">
             <h2 class="panel-heading">{{lang.global.mainArticles}}</h2>
-            <ul class="list-group pages">
+            <ul class="list-group">
               {{#files}}
-                <li class="list-group-item page"><a href="{{config.base_url}}/{{slug}}">{{title}}</a></li>
+                <a href="{{config.base_url}}/{{slug}}" class="list-group-item">{{title}}</a>
               {{/files}}
             </ul>
           </div>
@@ -41,20 +41,20 @@
           <ul class="list-group pages">
             {{#files}}
               {{^is_directory}}
-                <li class="list-group-item page"><a href="{{config.base_url}}/{{slug}}">{{title}}</a></li>
+                <a href="{{config.base_url}}/{{slug}}" class="list-group-item">{{title}}</a>
               {{/is_directory}}
               {{#is_directory}}
                 <li class="list-group-item page">{{title}}
                   {{#files}}
                     <ul>
                       {{^is_directory}}
-                        <li><a href="{{config.base_url}}/{{slug}}">{{title}}</a></li>
+                        <a href="{{config.base_url}}/{{slug}}" class="list-group-item">{{title}}</a>
                       {{/is_directory}}
                       {{#is_directory}}
                         <li>{{title}}</li>
                         <ul>
                           {{#files}}
-                            <li><a href="{{config.base_url}}/{{slug}}">{{title}}</a></li>
+                            <a href="{{config.base_url}}/{{slug}}" class="list-group-item">{{title}}</a>
                           {{/files}}
                         </ul>
                       {{/is_directory}}

@@ -4,15 +4,6 @@ html {
 body {	
 	font-size: 1.3rem;
 	background-color: #080808;
-
-}
-
-.menu .category-title {
-  color: #DDD;
-}
-
-.menu .pages {
-  color: #fff;	
 }
 
 .label {
@@ -65,6 +56,14 @@ body {
 .list-group-item {
 	background-color: #101010;
 	border-color: #333333;
+	color: #286090 !important;
+	border-radius: 0;
+}	
+
+.list-group-item:hover {
+	background-color: #286090 !important;
+	border-color: #333333;
+	color: #d6d6d6 !important;
 	border-radius: 0;
 }	
 
@@ -344,29 +343,29 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
 	background: rgba(255,255,0,0.4)
 }
 .CodeMirror span {
-*vertical-align:text-bottom
+	*vertical-align:text-bottom
 }
 @media print {
-.CodeMirror div.CodeMirror-cursor {
-	visibility: hidden
-}
+	.CodeMirror div.CodeMirror-cursor {
+		visibility: hidden
+	}
 }
 
 
 @media (max-width: 860px), (max-width: 860px) {
-.features .editor .outer {
-	padding: 0 40px
-}
+	.features .editor .outer {
+		padding: 0 40px
+	}
 }
 @media (max-width: 800px), (max-width: 800px) {
-.features .editor .outer {
-	padding: 0 30px
-}
+	.features .editor .outer {
+		padding: 0 30px
+	}
 }
 @media (max-width: 400px), (max-width: 400px) {
-.features .editor .outer {
-	padding: 0 15px
-}
+	.features .editor .outer {
+		padding: 0 15px
+	}
 }
 .features .editor .editorwrap {
 	max-width: 1180px;
@@ -376,19 +375,19 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
 	height: 450px
 }
 @media (max-width: 860px), (max-width: 860px) {
-.features .editor .editorwrap {
-	height: 400px
-}
+	.features .editor .editorwrap {
+		height: 400px
+	}
 }
 @media (max-width: 600px), (max-width: 600px) {
-.features .editor .editorwrap {
-	height: 480px
-}
+	.features .editor .editorwrap {
+		height: 480px
+	}
 }
 @media (max-width: 400px), (max-width: 400px) {
-.features .editor .editorwrap {
-	height: 530px
-}
+	.features .editor .editorwrap {
+		height: 530px
+	}
 }
 .features .editor .entry-markdown {
 	left: 0;
