@@ -236,3 +236,77 @@
     margin-bottom: 10px;
   }
 }
+
+.label {
+	border-radius: 0;
+}
+
+.btn {
+	border-radius: 0;
+}
+
+.btn-primary {
+	background-color: transparent;
+	border-color: #333333;
+	border-radius: 0;
+}
+
+.btn-default {
+	background-color: transparent;
+	border-color: #333333;
+	border-radius: 0;
+	color: #d6d6d6;
+}
+
+.input-box {
+	background-color: transparent;
+	border-color: #333333;
+	border-radius: 0;
+	color: #d6d6d6;
+}
+
+.panel {
+	background-color: transparent;
+	border-color: #333333;
+	border-radius: 0;
+}
+
+.panel-default .panel-heading {
+	background-color: #191919;
+	border-color: #333333;
+	border-radius: 0;
+	color: #d6d6d6;
+}
+
+.panel .list-group, .panel .panel-collapse .list-group {
+	background-color: #101010;
+	border-color: #333333;
+	border-radius: 0;
+}
+
+.list-group-item {
+	background-color: #101010;
+	border-color: #333333;
+	color: #286090 !important;
+	border-radius: 0;
+}	
+
+.list-group-item:hover {
+	background-color: #286090 !important;
+	border-color: #333333;
+	color: #d6d6d6 !important;
+	border-radius: 0;
+}	
+
+.jumbotron {
+	background-color: #101010;	
+}
+
+.modal-content {
+	border-radius: 0;
+	background: #101010;
+}
+
+.modal-title {
+	color: #d6d6d6;
+}

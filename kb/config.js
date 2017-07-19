@@ -44,7 +44,7 @@ var config = {
   // The base URL of your images folder,
   // Relative to config.public_dir
   // (can use %image_url% in Markdown files)
-  image_url: '/images',
+  image_url: 'public/images',
 
   // Add your analytics tracking code (including script tags)
   analytics: '',
