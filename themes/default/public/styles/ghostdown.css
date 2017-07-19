@@ -15,6 +15,10 @@ body {
   color: #fff;	
 }
 
+.label {
+	border-radius: 0;
+}
+
 .btn {
 	border-radius: 0;
 }
@@ -25,10 +29,18 @@ body {
 	border-radius: 0;
 }
 
-.input-lg {
+.btn-default {
 	background-color: transparent;
 	border-color: #333333;
 	border-radius: 0;
+	color: #d6d6d6;
+}
+
+.input-box {
+	background-color: transparent;
+	border-color: #333333;
+	border-radius: 0;
+	color: #d6d6d6;
 }
 
 .panel {
@@ -398,53 +410,53 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
 	background: #fff
 }
 @media (max-width: 860px), (max-width: 860px) {
-.features .editor .entry-markdown, .features .editor .entry-preview {
-	bottom: 40px
-}
+	.features .editor .entry-markdown, .features .editor .entry-preview {
+		bottom: 40px
+	}
 }
 @media (max-width: 400px), (max-width: 400px) {
-.features .editor .entry-markdown, .features .editor .entry-preview {
-	box-shadow: none
-}
+	.features .editor .entry-markdown, .features .editor .entry-preview {
+		box-shadow: none
+	}
 }
 @media (max-width: 860px), (max-width: 860px) {
-.features .editor .entry-markdown, .features .editor .entry-preview {
-	top: 0;
-	left: 0;
-	right: 0;
-	width: 100%;
-	border: none;
-	z-index: 100;
-	box-shadow: #edece4 1px 0 0 inset, #edece4 -1px 0 0 inset, #edece4 0 -1px 0 inset
-}
-.features .editor .entry-markdown .markdown, .features .editor .entry-markdown .entry-preview-content, .features .editor .entry-preview .markdown, .features .editor .entry-preview .entry-preview-content {
-	height: 50px;
-	overflow: hidden
-}
+	.features .editor .entry-markdown, .features .editor .entry-preview {
+		top: 0;
+		left: 0;
+		right: 0;
+		width: 100%;
+		border: none;
+		z-index: 100;
+		box-shadow: #edece4 1px 0 0 inset, #edece4 -1px 0 0 inset, #edece4 0 -1px 0 inset
+	}
+	.features .editor .entry-markdown .markdown, .features .editor .entry-markdown .entry-preview-content, .features .editor .entry-preview .markdown, .features .editor .entry-preview .entry-preview-content {
+		height: 50px;
+		overflow: hidden
+	}
 }
 @media (min-width: 860px) and (min-width: 860px), (min-width: 860px) and (min-width: 860px) {
-.features .editor .entry-markdown .floatingheader, .features .editor .entry-preview .floatingheader {
-	padding-left: 0;
-	padding-right: 18px;
-	margin-right: 1px
-}
+	.features .editor .entry-markdown .floatingheader, .features .editor .entry-preview .floatingheader {
+		padding-left: 0;
+		padding-right: 18px;
+		margin-right: 1px
+	}
 }
 @media (max-width: 860px), (max-width: 860px) {
-.features .editor .entry-markdown .floatingheader, .features .editor .entry-preview .floatingheader {
-	cursor: pointer;
-	width: 50%;
-	border: none;
-	color: #fff;
-	background: #aaa9a2;
-	position: absolute;
-	top: -40px;
-	left: 0;
-	box-shadow: rgba(0,0,0,0.1) 0 -2px 3px inset;
-	padding: 10px 0;
-}
-.features .editor .entry-markdown .floatingheader a, .features .editor .entry-preview .floatingheader a {
-	color: #fff
-}
+	.features .editor .entry-markdown .floatingheader, .features .editor .entry-preview .floatingheader {
+		cursor: pointer;
+		width: 50%;
+		border: none;
+		color: #fff;
+		background: #aaa9a2;
+		position: absolute;
+		top: -40px;
+		left: 0;
+		box-shadow: rgba(0,0,0,0.1) 0 -2px 3px inset;
+		padding: 10px 0;
+	}
+	.features .editor .entry-markdown .floatingheader a, .features .editor .entry-preview .floatingheader a {
+		color: #fff
+	}
 }
 .features .editor .entry-markdown .floatingheader a, .features .editor .entry-preview .floatingheader a {
 	color: #aaa9a2
@@ -457,20 +469,20 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
 	overflow: auto
 }
 @media (max-width: 860px), (max-width: 860px) {
-.features .editor .entry-markdown.active header, .features .editor .entry-preview.active header {
-	cursor: auto;
-	color: #aaa9a2;
-	background: #fff;
-	box-shadow: #edece4 0 1px 0 inset, #edece4 1px 0 0 inset, #edece4 -1px 0 0 inset
-}
-.features .editor .entry-markdown.active header a, .features .editor .entry-preview.active header a {
-	color: #aaa9a2
-}
+	.features .editor .entry-markdown.active header, .features .editor .entry-preview.active header {
+		cursor: auto;
+		color: #aaa9a2;
+		background: #fff;
+		box-shadow: #edece4 0 1px 0 inset, #edece4 1px 0 0 inset, #edece4 -1px 0 0 inset
+	}
+	.features .editor .entry-markdown.active header a, .features .editor .entry-preview.active header a {
+		color: #aaa9a2
+	}
 }
 @media (max-width: 400px), (max-width: 400px) {
-.features .editor .entry-markdown .markdown-help, .features .editor .entry-markdown .entry-word-count, .features .editor .entry-preview .markdown-help, .features .editor .entry-preview .entry-word-count {
-	display: none
-}
+	.features .editor .entry-markdown .markdown-help, .features .editor .entry-markdown .entry-word-count, .features .editor .entry-preview .markdown-help, .features .editor .entry-preview .entry-word-count {
+		display: none
+	}
 }
 .features .editor .markdown-help {
 	float: right
@@ -510,9 +522,9 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
 	padding-right: 22px
 }
 @media (min-width: 860px) and (min-width: 860px), (min-width: 860px) and (min-width: 860px) {
-.features .editor .entry-markdown .floatingheader {
-	padding-left: 40px
-}
+	.features .editor .entry-markdown .floatingheader {
+		padding-left: 40px
+	}
 }
 .features .editor .entry-markdown-content textarea {
 	border: 0;
@@ -556,27 +568,27 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
 	padding: 65px 0 40px 0
 }
 @media (max-width: 860px), (max-width: 860px) {
-.features .editor .CodeMirror-lines {
-	padding: 25px 0 30px 0
-}
+	.features .editor .CodeMirror-lines {
+		padding: 25px 0 30px 0
+	}
 }
 @media (max-width: 400px), (max-width: 400px) {
-.features .editor .CodeMirror-lines {
-	padding: 15px 0
-}
+	.features .editor .CodeMirror-lines {
+		padding: 15px 0
+	}
 }
 .features .editor .CodeMirror pre {
 	padding: 0 40px 0 40px
 }
 @media (max-width: 860px), (max-width: 860px) {
-.features .editor .CodeMirror pre {
-	padding: 0 30px
-}
+	.features .editor .CodeMirror pre {
+		padding: 0 30px
+	}
 }
 @media (max-width: 400px), (max-width: 400px) {
-.features .editor .CodeMirror pre {
-	padding: 0 15px
-}
+	.features .editor .CodeMirror pre {
+		padding: 0 15px
+	}
 }
 .features .editor .cm-header {
 	color: #000;
@@ -587,11 +599,11 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
 	color: #000
 }
 @media (max-width: 860px), (max-width: 860px) {
-.features .editor .entry-preview .floatingheader {
-	right: 0;
-	left: auto;
-	border: none
-}
+	.features .editor .entry-preview .floatingheader {
+		right: 0;
+		left: auto;
+		border: none
+	}
 }
 .features .editor .entry-preview-content {
 	position: absolute;
@@ -604,28 +616,37 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
 	font-size: 0.95em
 }
 @media (max-width: 860px), (max-width: 860px) {
-.features .editor .entry-preview-content {
-	padding: 30px
-}
+	.features .editor .entry-preview-content {
+		padding: 30px
+	}
 }
 @media (max-width: 400px), (max-width: 400px) {
-.features .editor .entry-preview-content {
-	padding: 15px 15px 10px 15px
-}
-}
-@media (max-width: 860px), (max-width: 860px) {
-.features .editor .scrolling .floatingheader {
-	height: 39px;
-	box-shadow: none
-}
+	.features .editor .entry-preview-content {
+		padding: 15px 15px 10px 15px
+	}
 }
 @media (max-width: 860px), (max-width: 860px) {
-.features .editor .scrolling .floatingheader::before, .features .editor .scrolling .floatingheader::after {
-	display: none
-}
+	.features .editor .scrolling .floatingheader {
+		height: 39px;
+		box-shadow: none
+	}
 }
 @media (max-width: 860px), (max-width: 860px) {
-.features .editor .scrolling .CodeMirror-scroll, .features .editor .scrolling .entry-preview-content {
-	box-shadow: 0 3px 5px rgba(0,0,0,0.05) inset
+	.features .editor .scrolling .floatingheader::before, .features .editor .scrolling .floatingheader::after {
+		display: none
+	}
 }
+@media (max-width: 860px), (max-width: 860px) {
+	.features .editor .scrolling .CodeMirror-scroll, .features .editor .scrolling .entry-preview-content {
+		box-shadow: 0 3px 5px rgba(0,0,0,0.05) inset
+	}
+}
+
+.modal-content {
+	border-radius: 0;
+	background: #101010;
+}
+
+.modal-title {
+	color: #d6d6d6;
 }

@@ -1,6 +1,6 @@
 .header {
   color: #CCC;
-  background: #080808;
+  background: #101010;
 }
 
 .header .container-fluid {
@@ -92,8 +92,9 @@
 
 .content {
   padding: 40px;
-  margin: 0px 20px;
+  margin: 40px 20px;
   color: #d6d6d6;
+  background: #101010;
   border: 0px solid #E9E9E9;
   -webkit-box-shadow: 0 1px 50px rgba(0,0,0,0.1);
   box-shadow: 0 1px 50px rgba(0,0,0,0.1);
@@ -204,17 +205,22 @@
   overflow:hidden !important;
   text-overflow: ellipsis !important;
   text-align: left !important;
+  margin-top: 5px;
 }
 
 .container-table {
     display: table;
-    margin-top: 10px;
+    margin-top: 5px;
     margin-bottom: -30px;
 }
 .vertical-center-row {
     display: table-cell;
     vertical-align: middle;
     width: 616px;
+}
+
+.control-label {
+  color: #d6d6d6;
 }
 
 @media only screen and (max-width: 767px) {
