@@ -338,10 +338,10 @@ var Raneto = function () {
             val.files.push({
               slug: slug,
               title: meta.title ? meta.title : _this2.slugToTitle(slug),
-              feature: meta.feature,
               is_directory: false,
               active: activePageSlug.trim() === '/' + slug,
-              sort: pageSort
+              sort: pageSort,
+              feature: meta.feature
             });
           } catch (e) {
             if (_this2.config.debug) {
