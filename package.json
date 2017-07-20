@@ -1,10 +1,11 @@
 {
-  "name": "raneto",
-  "version": "0.13.0",
-  "description": "Markdown powered Knowledgebase",
-  "author": "Gilbert Pellegrom <gilbert@pellegrom.me>",
+  "name": "elysium-support",
+  "version": "1.0",
+  "description": "Markdown powered Knowledgebase, based on Raneto",
+  "author": "Elysium Project <elysium-project.org>",
   "license": "MIT",
   "keywords": [
+    "elysium proejct",
     "raneto",
     "knowledgebase",
     "markdown",
@@ -14,16 +15,16 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/gilbitron/Raneto.git"
+    "url": "https://github.com/elysium-project/knowledge-base.git"
   },
   "bugs": "https://github.com/gilbitron/Raneto/issues",
   "contributors": [
-    "https://github.com/gilbitron/Raneto/graphs/contributors"
+    "https://github.com/elysium-project/knowledge-base/contributors"
   ],
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://raw.githubusercontent.com/gilbitron/Raneto/master/LICENSE"
+      "url": "https://raw.githubusercontent.com/elysium-project/knowledge-base/master/LICENSE"
     }
   ],
   "bin": "./bin/raneto",

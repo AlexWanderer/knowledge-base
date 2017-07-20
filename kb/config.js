@@ -31,7 +31,7 @@ var config = {
 
   // Which Theme to Use?
   theme_dir  : __dirname + '/../themes/',
-  theme_name : 'default',
+  theme_name : 'elysium',
 
   // Specify the path of your content folder where all your '.md' files are located
   // Fix: Needs trailing slash for now!
@@ -39,12 +39,12 @@ var config = {
   content_dir : __dirname + '/content/',
 
   // Where is the public directory or document root?
-  public_dir  : __dirname + '/../themes/default/public/',
+  public_dir  : __dirname + '/../themes/elysium/public/',
 
   // The base URL of your images folder,
   // Relative to config.public_dir
   // (can use %image_url% in Markdown files)
-  image_url: 'public/images',
+  image_url: '/images',
 
   // Add your analytics tracking code (including script tags)
   analytics: '',
