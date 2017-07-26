@@ -13,7 +13,7 @@ Elysium's main source for support & helpful articles. This repository only inclu
 ## Quick Start
 1. Clone the repository & install [Node.JS](https://nodejs.org/en)
 2. Inside the repo's folder, run: `npm install`
-3. Create a `kb/config.js` file and set your accounts (password needs to be hashed with SHA-256)
+3. Create a `kb/credentials.js` file and set your accounts (password needs to be hashed with SHA-256)
 4. Launch the app with: `npm start` or `npm run start_win` (Windows)
 5. Visit [http://localhost:3000](http://localhost:3000) in your webbrowser
 6. You can login at [http://localhost:3000/login](http://localhost:3000/login)
