@@ -3,6 +3,11 @@
   background: #101010;
 }
 
+.jumbotron {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
 .header .container-fluid {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -299,7 +304,7 @@
 }	
 
 .jumbotron {
-	background-color: #101010;	
+	background-color: #080808;	
 }
 
 .modal-content {
