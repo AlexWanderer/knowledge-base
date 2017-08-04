@@ -41,9 +41,7 @@
   },
 
   "home": {
-    "searchKnowledgeBase": "Search the knowledge base",
-
-    "featuredArticles"   : "Hot topics"
+    "searchKnowledgeBase": "Search the knowledge base"
   },
 
   "login": {

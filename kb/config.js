@@ -61,14 +61,6 @@ var config = {
   // If authentication is enabled, set this to true to enable authentication for reading too
   authentication_for_read: false,
 
-  // Google OAuth
-  googleoauth: false,
-  oauth2 : {
-    client_id: 'GOOGLE_CLIENT_ID',
-    client_secret: 'GOOGLE_CLIENT_SECRET',
-    callback: 'http://localhost:3000/auth/google/callback',
-    hostedDomain: 'google.com'
-  },
   secret: 'someCoolSecretRightHere',
 
   //Loads accounts
@@ -78,9 +70,6 @@ var config = {
 
   // Sets the format for datetime's
   datetime_format: 'Do MMM YYYY',
-
-  // Set to true to render suitable layout for RTL languages
-  rtl_layout: false,
 
   // Edit Home Page title, description, etc.
   home_meta : {

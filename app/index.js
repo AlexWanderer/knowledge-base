@@ -33,7 +33,6 @@ function initialize (config) {
   var always_authenticate       = require('./middleware/always_authenticate.js')        (config);
   var authenticate_read_access  = require ('./middleware/authenticate_read_access.js')  (config);
   var error_handler             = require('./middleware/error_handler.js')              (config);
-  var oauth2                    = require('./middleware/oauth2.js');
   var route_login               = require('./routes/login.route.js')                    (config);
   var route_login_page          = require('./routes/login_page.route.js')               (config);
   var route_logout              = require('./routes/logout.route.js');
@@ -87,13 +86,6 @@ function initialize (config) {
       saveUninitialized : false
     }));
     app.use(authenticate_read_access);
-    // OAuth2
-    if (config.googleoauth === true) {
-      app.use(passport.initialize());
-      app.use(passport.session());
-      app.use(oauth2.router(config));
-      app.use(oauth2.template);
-    }
 
     app.post('/rn-login', route_login);
     app.get('/logout', route_logout);
@@ -107,9 +99,6 @@ function initialize (config) {
     if (config.authentication_for_edit === true) {
       middlewareToUse = always_authenticate;
     }
-    if (config.googleoauth === true) {
-      middlewareToUse = oauth2.required;
-    }
 
     app.post('/rn-edit',         middlewareToUse, route_page_edit);
     app.post('/rn-delete',       middlewareToUse, route_page_delete);
@@ -118,10 +107,7 @@ function initialize (config) {
   }
 
   // Router for / and /index with or without search parameter
-  if (config.googleoauth === true) {
-    app.get('/:var(index)?', oauth2.required, route_search, route_home);
-    app.get(/^([^.]*)/, oauth2.required, route_wildcard);
-  } else if (config.authentication_for_read === true) {
+  if (config.authentication_for_read === true) {
     app.get('/sitemap.xml', authenticate, route_sitemap);
     app.get('/:var(index)?', authenticate, route_search, route_home);
     app.get(/^([^.]*)/, authenticate, route_wildcard);

@@ -46,7 +46,6 @@
     "always-tail": "^0.2.0",
     "body-parser": "^1.17.1",
     "bootstrap": "^3.3.7",
-    "bootstrap-rtl": "^3.3.4",
     "commander": "^2.9.0",
     "cookie-parser": "^1.4.3",
     "debug": "^2.6.3",
